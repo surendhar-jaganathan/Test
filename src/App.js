@@ -1,7 +1,7 @@
 import { Route } from 'react-router';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+
 import { useHistory } from 'react-router-dom';
 
 

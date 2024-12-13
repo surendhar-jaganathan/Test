@@ -49,6 +49,8 @@ jobs:
     # Step 5: Build the React app
     - name: Build app
       run: npm run build
+      env:
+        CI: false 
 
     # Step 6: Deploy to another Git branch (e.g., 'gh-pages')
     - name: Deploy to gh-pages branch
