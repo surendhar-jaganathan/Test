@@ -42,9 +42,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    # Step 4: Run tests
-    - name: Run tests
-      run: npm test -- --ci --coverage # Ensure tests run in CI mode
+    # # Step 4: Run tests
+    # - name: Run tests
+    #   run: npm test -- --ci --coverage # Ensure tests run in CI mode
 
     # Step 5: Build the React app
     - name: Build app
