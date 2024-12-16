@@ -56,8 +56,8 @@ jobs:
 
     - name: Set Git identity
       run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
+        git config user.name "surendhar-jaganathan"
+        git config user.email "j.surendhar11@gmail.com"
         npm run deploy
       env:
         CI: false 
