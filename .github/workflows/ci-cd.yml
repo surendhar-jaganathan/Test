@@ -58,6 +58,7 @@ jobs:
     - name: Deploy to gh-pages branch
       run: npm run deploy
       env:
+          CI: false 
           GITHUB_TOKEN: ${{secrets.CI_CD_TOKEN}} 
 
 
