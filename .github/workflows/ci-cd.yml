@@ -54,10 +54,12 @@ jobs:
       env:
         CI: false 
 
-    # Step 6: Deploy to another Git branch (e.g., 'gh-pages')
+  
     - name: Deploy to gh-pages branch
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{secrets.CI_CD_TOKEN }}  # This automatically provides the token
-        branch: gh-pages  # This is the branch where you want to deploy the app
-        folder: build  
+      run: npm run deploy
+      env:
+          GITHUB_TOKEN: ${{secrets.CI_CD_TOKEN}} 
+
+
+
+
