@@ -54,17 +54,17 @@ jobs:
       env:
         CI: false 
 
-  
-    - name: Deploy to gh-pages branch
+    - name: Set Git identity
       run: |
-        git config --global user.name $user_name
-        git config --global user.email $user_email
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
         npm run deploy
+
+    - name: Deploy to gh-pages branch
+      run: npm run deploy
       
       env:
           CI: false 
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
   
 
