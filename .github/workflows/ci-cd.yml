@@ -56,7 +56,7 @@ jobs:
 
     - name: Set Git identity
       run: |
-        git config user.name "surendhar-jaganathan"
+        git config user.name "Test"
         git config user.email "j.surendhar11@gmail.com"
         git config remote.origin.url https://github.com/surendhar-jaganathan/Test.git
 
