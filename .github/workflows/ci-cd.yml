@@ -58,6 +58,7 @@ jobs:
       run: |
         git config user.name "Test"
         git config user.email "j.surendhar11@gmail.com"
+        git remote set-url origin https://x-access-token:${{ secrets.CI_CD_TOKEN }}@github.com/surendhar-jaganathan/Test.git
         git config remote.origin.url https://github.com/surendhar-jaganathan/Test.git
 
       env:
@@ -68,7 +69,7 @@ jobs:
       
       env:
           CI: false 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.CI_CD_TOKEN }} 
   
 
 
