@@ -54,6 +54,18 @@ jobs:
       env:
         CI: false 
 
+        
+
+    - name: Set Git identity
+      run: |
+          git config user.name "surendhar-jaganathan"
+          git config user.email "j.surendhar11@gmail.com"
+          git remote set-url origin https://x-access-token:${{ secrets.CI_CD_TOKEN }}@github.com/surendhar-jaganathan/Test.git
+          git config remote.origin.url https://github.com/surendhar-jaganathan/Test.git
+  
+      env:
+          CI: false 
+
 
 
     - name: Deploy to GitHub Pages
@@ -64,6 +76,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.CI_CD_TOKEN }} 
   
 
-
-
-  
