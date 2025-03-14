@@ -8,6 +8,9 @@ import reportWebVitals from './reportWebVitals';
  import About from './About';
  import Details from './details';
 
+ 
+    // // "start": "react-scripts start"
+    
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const path= process.env.PUBLIC_URL
 root.render(
