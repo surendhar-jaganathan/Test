@@ -1,5 +1,0 @@
-info: This is a test log message. {"timestamp":"2025-03-14T06:17:25.670Z"}
-info: This is a test log message. {"timestamp":"2025-03-14T06:19:22.341Z"}
-info: This is a test log message. {"timestamp":"2025-03-14T06:34:56.545Z"}
-info: This is a test log message2345. {"timestamp":"2025-03-14T06:35:05.155Z"}
-info: This is a test log message2345. {"timestamp":"2025-03-14T07:16:45.504Z"}
